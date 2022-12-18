@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste of Iran</title>
+    <style>
+      body {
+        background: linear-gradient(
+          87.4deg,
+          rgb(255, 241, 165) 1.9%,
+          rgb(200, 125, 76) 49.7%,
+          rgb(83, 54, 54) 100.5%
+        );
+      }
+      h1 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        margin-bottom: 0;
+      }
+      h2 {
+        text-align: center;
+        padding: 0 0 0 0;
+        margin: 0;
+        font-weight: lighter;
+      }
+      span {
+        color: rgb(78, 57, 11);
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #d6a41a;
+        background: #d6a41a;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #d6a41a;
+        border: 1px solid #d6a41a;
+      }
+      a {
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(231, 200, 143);
+      }
+      a:hover {
+        text-decoration: underline;
+        color: rgb(231, 200, 143);
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      hr {
+        border: 1px solid rgb(0, 0, 0);
+      }
+      .spanContent {
+        text-align: center;
+      }
+      .meals {
+        flex: 33.33%;
+        text-align: center;
+        margin: 6px;
+        padding: 0 0px 0 0px;
+        position: relative;
+      }
+      .contain {
+        display: flex;
+        margin: auto;
+        width: 70%;
+        align-items: center;
+      }
+      .description {
+        position: absolute;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        background-color: rgba(68, 46, 13, 0.623);
+      }
+      .description p {
+        margin-top: 65%;
+      }
+      .meals:hover .description {
+        visibility: visible;
+      }
+      .iranInfo {
+        text-align: center;
+        padding: 0 0 40px 0;
+        margin: 0;
+        line-height: 20px;
+      }
+      .iranInfo a {
+        all: unset;
+        cursor: pointer;
+        color: rgba(231, 200, 143, 0.637);
+      }
+      .iranInfo a:hover {
+        text-decoration: underline;
+      }
+
+      .spanContent a {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="title">Taste of Iran</h1>
+      <h2>Traditional cuisine inspirations from Iran</h2>
+      <hr />
+      <p class="iranInfo">
+        The foods of the courts of ancient Persia
+        <em>(as Iran was called until the 1930s)</em> included perfumed stews
+        flavored with cinnamon, mint, and pomegranates; <br />
+        elaborate stuffed fruits and vegetables; and tender roasted meats —
+        dishes that have influenced the cooking of countries as far-flung as
+        India and Morocco.<br />
+        <a
+          href="https://www.epicurious.com/archive/cuisines/cuisineguides/persian"
+          target="_blank"
+          ><strong>(Read more)</strong></a
+        >
+      </p>
+    </div>
+
+    <div class="contain">
+      <div class="meals">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/61269a9c93caaf2301aabdcd/1634740397985-A2J184K36M81FL3XVHQK/Ashe+Reshteh+recipe-3.jpg"
+          alt="Ash-e Reshteh"
+        />
+        <div class="description">
+          <a
+            href="https://www.saveur.com/article/Recipes/Ash-e-Reshteh-1000089833/"
+            target="_blank"
+          >
+            <p>Aush Reshteh</p></a
+          >
+        </div>
+      </div>
+
+      <div class="meals">
+        <img
+          src="https://i0.wp.com/www.princesstafadzwa.com/wp-content/uploads/2016/08/chickenkabobs.jpg?ssl=1"
+          alt="Kabob"
+        />
+        <div class="description">
+          <a
+            href="https://familyspice.com/persian-chicken-kabob/"
+            target="_blank"
+          >
+            <p>Chicken Kabob</p></a
+          >
+        </div>
+      </div>
+      <div class="meals">
+        <img
+          src="http://www.theroadtohoney.com/wp-content/uploads/2015/02/Ghormeh-Sabzi-with-Saffron-Rice-and-Tahdig-1-of-2.jpg"
+          alt="Ghormeh Sabzi"
+        />
+        <div class="description">
+          <a
+            href="https://cooking.nytimes.com/recipes/1020209-khoresh-e-ghormeh-sabzi-persian-herb-bean-and-lamb-stew"
+            target="_blank"
+          >
+            <p>Ghormeh Sabzi</p></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="contain">
+      <div class="meals">
+        <img
+          src="https://www.proportionalplate.com/wp-content/uploads/2021/11/Baghali-Polo.jpg"
+          alt="Baghali Polo"
+        />
+        <div class="description">
+          <a
+            href="https://www.thedeliciouscrescent.com/baghali-polo-persian-dill-rice/"
+            target="_blank"
+          >
+            <p>Baghali Polo</p></a
+          >
+        </div>
+      </div>
+
+      <div class="meals">
+        <img
+          src="https://yummynotes.net/wp-content/uploads/2019/04/zereshk-polo-recipe-4.jpg"
+          alt="Zereshk Polo"
+        />
+        <div class="description">
+          <a
+            href="https://www.yummology.com/masoume/r/xai85g0vcx/zereshk-polo-ba-morgh-barberry-rice-with-saffron-chicken"
+            target="_blank"
+          >
+            <p>Zereshk Polo</p></a
+          >
+        </div>
+      </div>
+      <div class="meals">
+        <img
+          src="https://i.pinimg.com/736x/80/be/90/80be90bd69129597f9eda6b42fa0f50d--kurdish-food-stuffed-grape-leaves.jpg"
+          alt="Dolmeh"
+        />
+        <div class="description">
+          <a
+            href="https://www.carolinescooking.com/dolmeh-barge-mo-stuffed-grape-leaves/"
+            target="_blank"
+          >
+            <p>Dolmeh</p></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button>Send me recipes!</button>
+    </div>
+
+    <div class="spanContent">
+      <p>
+        Coded by
+        <a href="https://www.linkedin.com/in/samindiz/" target="_blank"
+          ><span><strong>Samin</strong> 👩🏻‍💻</span></a
+        >
+      </p>
+    </div>
+
+    <script>
+      function recipes() {
+        let firstName = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+
+        if (firstName === "" && email === "") {
+          alert("You will not be receiving an email!");
+        } else {
+          alert(
+            "An email has been sent to " +
+              email +
+              ", thank you " +
+              firstName +
+              "!"
+          );
+        }
+      }
+      let recipeButton = document.querySelector("button");
+      recipeButton.addEventListener("click", recipes);
+    </script>
+  </body>
+</html>
